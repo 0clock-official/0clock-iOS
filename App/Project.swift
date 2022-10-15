@@ -13,7 +13,8 @@ let project = Project.project(
     product: .app,
     packages: [],
     dependencies: [
-        .ThirdPartyManager,
+        .PresentationModule,
+        .DataModule,
     ],
     infoPlist: "Supporting/Info.plist",
     sources: [

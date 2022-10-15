@@ -2,16 +2,17 @@
 //  Project.swift
 //  Manifests
 //
-//  Created by 홍경표 on 2022/10/09.
+//  Created by 홍경표 on 2022/03/18.
 //
 
 import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project.makeModule(
-    name: "ThirdPartyManager",
+    name: "PresentationModule",
     product: .framework,
     dependencies: [
-        .SPM.Then,
-    ]
+        .DomainModule,
+    ],
+    resources: .resources(with: [.assets])
 )

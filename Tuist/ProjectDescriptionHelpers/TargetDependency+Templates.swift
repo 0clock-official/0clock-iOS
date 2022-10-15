@@ -9,6 +9,26 @@ import ProjectDescription
 
 /// Modules
 extension TargetDependency {
+    public static let PresentationModule: TargetDependency = .project(
+        target: "PresentationModule",
+        path: .relativeToRoot("Module/PresentationModule")
+    )
+    public static let DomainModule: TargetDependency = .project(
+        target: "DomainModule",
+        path: .relativeToRoot("Module/DomainModule")
+    )
+    public static let DataModule: TargetDependency = .project(
+        target: "DataModule",
+        path: .relativeToRoot("Module/DataModule")
+    )
+    public static let NetworkModule: TargetDependency = .project(
+        target: "NetworkModule",
+        path: .relativeToRoot("Module/NetworkModule")
+    )
+    public static let InjectionManager: TargetDependency = .project(
+        target: "InjectionManager",
+        path: .relativeToRoot("Module/InjectionManager")
+    )
     public static let ThirdPartyManager: TargetDependency = .project(
         target: "ThirdPartyManager",
         path: .relativeToRoot("Module/ThirdPartyManager")
@@ -19,6 +39,8 @@ extension TargetDependency {
 extension TargetDependency {
     public struct SPM {
         public static let Then = TargetDependency.external(name: "Then")
+        public static let Swinject = TargetDependency.external(name: "Swinject")
+        public static let Alamofire = TargetDependency.external(name: "Alamofire")
     }
 }
 

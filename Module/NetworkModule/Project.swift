@@ -2,16 +2,16 @@
 //  Project.swift
 //  Manifests
 //
-//  Created by 홍경표 on 2022/10/09.
+//  Created by 홍경표 on 2022/03/20.
 //
 
 import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project.makeModule(
-    name: "ThirdPartyManager",
-    product: .framework,
+    name: "NetworkModule",
+    product: .staticFramework,
     dependencies: [
-        .SPM.Then,
+        .SPM.Alamofire,
     ]
 )
