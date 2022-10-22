@@ -11,7 +11,7 @@ import ProjectDescription
 extension TargetDependency {
     public static let PresentationModule: TargetDependency = .project(
         target: "PresentationModule",
-        path: .relativeToRoot("Module/PresentationModule")
+        path: .relativeToRoot("PresentationModule")
     )
     public static let DomainModule: TargetDependency = .project(
         target: "DomainModule",
